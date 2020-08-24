@@ -11,7 +11,7 @@ RUN conda install --quiet --yes -c conda-forge \
     flake8=3.* \
     pytest=6.*
 
-# Install jupyter extensions (nbgitpuller, git, jupytext)
+# Install jupyter extensions (nbgitpuller, git and jupytext)
 USER root
 
 RUN pip install git+https://github.com/data-8/nbgitpuller \
