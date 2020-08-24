@@ -1,6 +1,6 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-ARG BASE_CONTAINER=jupyter/scipy-notebook
+ARG BASE_CONTAINER=ubcmds/dsci-011:latest
 FROM $BASE_CONTAINER
 LABEL maintainer="Elijah Willie <ewillie@cmmt.ubc.ca>"
 
