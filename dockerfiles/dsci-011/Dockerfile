@@ -23,7 +23,7 @@ RUN pip install git+https://github.com/data-8/nbgitpuller \
     && jupyter labextension install jupyterlab-flake8 \
     && jupyter labextension install @ryantam626/jupyterlab_code_formatter \
     && pip install jupyterlab_code_formatter \
-    && jupyter serverextension enable --py jupyterlab_code_formatter \
+    && jupyter serverextension enable --py jupyterlab_code_formatter --sys-prefix\
     && pip install black isort \
     && jupyter lab build  
     
