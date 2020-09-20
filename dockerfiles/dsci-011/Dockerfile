@@ -20,7 +20,13 @@ RUN pip install git+https://github.com/data-8/nbgitpuller \
     && pip install jupyterlab-git \
     && jupyter serverextension enable --py jupyterlab_git \
     && pip install jupytext --upgrade \
+    && jupyter labextension install jupyterlab-flake8 \
+    && jupyter labextension install @ryantam626/jupyterlab_code_formatter \
+    && pip install jupyterlab_code_formatter \
+    && jupyter serverextension enable --py jupyterlab_code_formatter \
+    && pip install black isort \
     && jupyter lab build  
+    
 RUN useradd -m -s /bin/bash -N -u 9999 jupyter
 
 USER jupyter
