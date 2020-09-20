@@ -20,6 +20,7 @@ RUN pip install git+https://github.com/data-8/nbgitpuller \
     && pip install jupyterlab-git \
     && jupyter serverextension enable --py jupyterlab_git \
     && pip install jupytext --upgrade \
+    && pip install rpy2 \
     && jupyter labextension install jupyterlab-flake8 \
     && jupyter labextension install @ryantam626/jupyterlab_code_formatter \
     && pip install jupyterlab_code_formatter \
