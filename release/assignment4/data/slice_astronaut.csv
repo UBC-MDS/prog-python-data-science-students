@@ -1,0 +1,5 @@
+,Name,Year,Group,Status,Birth_Date,Birth_Place,Gender,Graduate,Military,Space_Walks,Space_Walks_hrs,Deceased,Missions
+0,Neil A. Armstrong,1962,2,Deceased,1930-08-05,"Wapakoneta, OH",Male,Aerospace Engineering,False,1,2.0,True,"[Gemini 8,  Apollo 11]"
+1,Buzz Aldrin,1963,3,Retired,1930-01-20,"Montclair, NJ",Male,Astronautics,True,2,8.0,False,"[ Gemini 12,  Apollo 11]"
+2,Patricia Hilliard Robertson,1998,17,Deceased,1963-03-12,"Indiana, PA",Female,Medicine,False,0,0.0,True,[]
+3,Alfred M. Worden,1966,5,Retired,1932-02-07,"Jackson, MI",Male,Aeronautical & Astronautical Engineering,True,1,0.5,False,[Apollo 15]
