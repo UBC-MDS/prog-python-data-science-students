@@ -25,7 +25,8 @@ RUN pip install git+https://github.com/data-8/nbgitpuller \
     && pip install jupyterlab_code_formatter \
     && jupyter serverextension enable --py jupyterlab_code_formatter --sys-prefix\
     && pip install black isort \
-    && jupyter lab build  
+    && jupyter lab build  \
+    && pip install flake8-nb
     
 RUN useradd -m -s /bin/bash -N -u 9999 jupyter
 
