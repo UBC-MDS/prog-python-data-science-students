@@ -330,9 +330,6 @@ def test_6f(answer):
 def test_6g(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert answer.mark == 'line', "Make sure you are creating a line plot using the 'mark.line()' function."
-    assert str(answer.encoding.x.shorthand
-               ) == 'day', "Make sure you are plotting 'day' on the x-axis."
-    assert str(
-        answer.encoding.y.shorthand
-    ) == 'wind_speed', "Make sure you are plotting 'wind_speed on the y-axis."
+    assert answer.encoding.x.shorthand == 'day' or answer.encoding.x.field == 'day', "Make sure you are plotting 'day' on the x-axis."
+    assert answer.encoding.y.shorthand == 'wind_speed' or answer.encoding.y.field == 'wind_speed', "Make sure you are plotting 'wind_speed' on the y-axis."
     return ("Success")

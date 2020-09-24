@@ -213,7 +213,7 @@ def test_2f(answer):
                                                                                                     `COMMON_NAME` variable on the x-axis."
     if str(answer.encoding.y.shorthand) == 'Undefined':
         assert answer.encoding.y.aggregate == 'mean', "Make sure you are using the mean function"
-        assert answer.encoding.y.field == 'DIAMETER', "Make sure you are taking the mean of the 'DIAMETER'"
+        assert answer.encoding.y.field == 'DIAMETER', "Make sure you are taking the mean of 'DIAMETER'"
     else:
         assert 'mean' in str(answer.encoding.y.shorthand), "Make sure you are using the mean function"
         assert 'DIAMETER' in str(answer.encoding.y.shorthand), "Make sure you are taking the mean of 'DIAMETER'"
