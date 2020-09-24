@@ -64,9 +64,15 @@ def test_2e(answer):
 def test_2f(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
-    assert 'School' in answer.encoding.x.shorthand, "Make sure you are plotting the `School` variable on the x-axis."
-    assert 'Wage' in answer.encoding.y.shorthand, "Make sure you are plotting the `Wage` variable on the y-axis."
-    assert not answer.title == 'undefined', "Make sure you are providing a title for the plot."
+    assert str(answer.encoding.x.shorthand) == 'School' or str(answer.encoding.x.field) == 'School', "Make sure you are plotting the \
+                                                                                                    `School` variable on the x-axis."
+    if str(answer.encoding.y.shorthand) == 'Undefined':
+        assert answer.encoding.y.aggregate == 'mean', "Make sure you are using the mean function"
+        assert answer.encoding.y.field == 'Wage', "Make sure you are taking the mean of the 'Wage'"
+    else:
+        assert 'mean' in str(answer.encoding.y.shorthand), "Make sure you are using the mean function."
+        assert 'Wage' in str(answer.encoding.y.shorthand), "Make sure you are taking the mean of the 'Wage' variable."
+    assert not answer.title == 'Undefined', "Make sure you are providing a title for the plot."
     return ("success")
 
 def test_2g(answer):
@@ -126,9 +132,11 @@ def test_2h(answer):
 def test_2i(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
-    assert 'School' in answer.encoding.x.shorthand, "Make sure you are plotting the `School` variable on the x-axis."
-    assert 'Wage_Gap' in answer.encoding.y.shorthand, "Make sure you are plotting the `Wage_Gap` variable on the y-axis."
-    assert not answer.title == 'undefined', "Make sure you are providing a title for the plot."
+    assert str(answer.encoding.x.shorthand) == 'School' or str(answer.encoding.x.field) == 'School', "Make sure you are plotting the \
+                                                                                                    `School` variable on the x-axis."
+    assert str(answer.encoding.y.shorthand) == 'Wage_Gap' or str(answer.encoding.y.field) == 'Wage_Gap', "Make sure you are plotting the \
+                                                                                                    `Wage_Gap` variable on the y-axis."
+    assert not answer.title == 'Undefined', "Make sure you are providing a title for the plot."
     return ("success")
 
 def test_3a(answer):
@@ -229,7 +237,9 @@ def test_4h(answer):
 def test_4i(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
-    assert 'Continent' in answer.encoding.x.shorthand, "Make sure you are plotting the `Continent` variable on the x-axis."
-    assert 'Emission_pp' in answer.encoding.y.shorthand, "Make sure you are plotting the `Emission_pp` variable on the y-axis."
-    assert not answer.title == 'undefined', "Make sure you are providing a title for the plot."
+    assert str(answer.encoding.x.shorthand) == 'Continent' or str(answer.encoding.x.field) == 'Continent', "Make sure you are plotting the \
+                                                                                                    `Continent` variable on the x-axis."
+    assert str(answer.encoding.y.shorthand) == 'Emission_pp' or str(answer.encoding.y.field) == 'Emission_pp', "Make sure you are plotting the \
+                                                                                                    `Emission_pp` variable on the y-axis."
+    assert not answer.title == 'Undefined', "Make sure you are providing a title for the plot."
     return("Success")

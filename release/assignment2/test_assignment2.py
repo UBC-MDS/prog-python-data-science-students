@@ -216,7 +216,7 @@ def test_2f(answer):
         assert answer.encoding.y.field == 'DIAMETER', "Make sure you are taking the mean of the 'DIAMETER'"
     else:
         assert 'mean' in str(answer.encoding.y.shorthand), "Make sure you are using the mean function"
-        assert 'DIAMETER' in str(answer.encoding.y.shorthand), "Make sure you are using the mean function"
+        assert 'DIAMETER' in str(answer.encoding.y.shorthand), "Make sure you are taking the mean of 'DIAMETER'"
     assert not answer.title == 'Undefined', "Make sure you are providing a title for the plot."
     return ("success")
 
