@@ -128,19 +128,18 @@ def test_7g(answer):
     assert answer.mark.type == "bar", "Your plot is not a histogram. Make sure you are using the 'mark_bar()' function"
     assert answer.mark.color == "lightsteelblue", "Make sure you are using the 'color' argument in the 'mark_bar' function to set the color to 'lightsteelblue'."
     assert answer.encoding.x.bin.maxbins == 25, "Make sure you are setting the 'maxbins = 25'"
-    assert str(answer.encoding.x.shorthand) == 'bmi', "Make sure you are plotting the `bmi` variable."
+    assert str(answer.encoding.x.shorthand) == 'bmi' or str(answer.encoding.x.field) == 'bmi', "Make sure you are plotting the `bmi` variable."
     assert answer.title == 'Distribution of Male Runners BMI', "Make sure you are providing the correct title for the plot."
     return "Success"
 
 def test_7h(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert answer.mark.type == "circle", "Your plot is not a histogram. Make sure you are using the 'mark_circle' function"
     assert answer.mark.color == "slateblue", "Make sure you are using the 'color' argument in the 'mark_circle' function to set the color to 'slateblue'."
     assert answer.mark.opacity == 0.3, "Make sure you are using the 'opacity' argument in the 'mark_circle' function to set the opacity to 0.3."
     assert answer.mark.size == 12, "Make sure you are using the 'size' argument in the 'mark_circle' function to set the size to 12."
-    assert str(answer.encoding.x.shorthand) == 'bmi', "Make sure you are plotting the `bmi` variable on the x-axis."
-    assert str(answer.encoding.y.shorthand) == 'km10_time_minutes', "Make sure you are plotting the `km10_time_minutes` variable. on the y-axix"
+    assert str(answer.encoding.x.shorthand) == 'bmi' or str(answer.encoding.x.field) == 'bmi', "Make sure you are plotting the `bmi` variable on the x-axis."
+    assert str(answer.encoding.y.shorthand) == 'km10_time_minutes' or str(answer.encoding.y.field) == 'km10_time_minutes', "Make sure you are plotting the `km10_time_minutes` variable. on the y-axix"
     assert answer.title == 'Relationship between BMI and 10k running time (mins)', "Make sure you are providing the correct title for the plot."
     return "Success"
 
