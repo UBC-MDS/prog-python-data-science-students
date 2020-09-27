@@ -376,8 +376,8 @@ def test_4c(answer):
 
 def test_4d(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert sha1((answer.lower() + "K").encode('utf8')).hexdigest(
-    ) == "2eb5a3b6d89c53470ebf5237326c088ddbb59fa1", "Answer is incorrect"
+    assert sha1((answer.lower() + "Y").encode('utf8')).hexdigest(
+    ) == "3723abda8a02e1484745a568b80f8fbec8abad50", "Answer is incorrect"
     return ("success")
 
 
