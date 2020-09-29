@@ -7,7 +7,7 @@ from decimal import Decimal
 
 def test_1a(answer):
     case1 = (sha1(str(answer[0].lower() + "x").encode("utf8")).hexdigest() == "2a2e1206b4222b0d7cc8c8a1d8b302ee70cfe817")
-    case2 = (sha1(str(answer[1].lower() + "p").encode("utf8")).hexdigest() == "3f81e91d69a8a61ffbf19297eb0791ad54ce5690")
+    case2 = (sha1(str(answer[1].lower() + "p").encode("utf8")).hexdigest() == "0691a664b24b6f15b20cd5aee64b72271db08be1")
     total_sum = sum([case1, case2])
     assert total_sum == 2, "You have {0} correct answer(s) and {1} incorrect answer(s).".format(total_sum, 2-total_sum)
     return("Success")
