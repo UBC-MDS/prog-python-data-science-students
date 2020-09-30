@@ -12,13 +12,13 @@ def test_1a(answer):
     case1 = (sha1(str(answer[0] + "a").encode("utf8")).hexdigest() ==
              "c1943964a4b548e74ff06b3674506cf9de93b9a2")
     case2 = (sha1(str(answer[1] + "b").encode("utf8")).hexdigest() ==
-             "04360c7958b588bd1b919ba2de3d2ab3778e3671")
+             "87c8fbcf99ab95226f59406df61904a689e240a4")
     case3 = (sha1(str(answer[2] + "c").encode("utf8")).hexdigest() ==
              "52ca2ba99daee126e0067fee9377ff79f83a32e9")
     case4 = (sha1(str(answer[3] + "d").encode("utf8")).hexdigest() ==
              "fa6b5eaa1533458ee0170f3cdec816406ee9c190")
     case5 = (sha1(str(answer[4] + "e").encode("utf8")).hexdigest() ==
-             "bab3f0e77f0736782272bd30c7de0bb9f4f437b4")
+             "0292aa9c29e8e4b165701d18fab9761c999d92ff")
     case6 = (sha1(str(answer[5] + "f").encode("utf8")).hexdigest() ==
              "07a396e53e133f290939f8a3810723256895a49c")
     case7 = (sha1(str(answer[6] + "g").encode("utf8")).hexdigest() ==
