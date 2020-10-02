@@ -182,7 +182,7 @@ def test_4a(answer):
     case5 = (sha1(str(answer[4]).encode("utf8")).hexdigest() ==
              "9d7ad2b72019f7ce8bbdaf85b99e2daceb2770f1")
     case6 = (sha1(str(answer[5]).encode("utf8")).hexdigest() ==
-             "704d545f60791032ed8e0bdeb66eac3b09758741")
+             "a0edf00e10c0275dda545819d5d19dcf3f9157ce")
     case7 = (sha1(str(answer[6]).encode("utf8")).hexdigest() ==
              "08390e1f452d666b31eb001d81a898796a1a164a")
     case8 = (sha1(str(answer[7]).encode("utf8")).hexdigest() ==
