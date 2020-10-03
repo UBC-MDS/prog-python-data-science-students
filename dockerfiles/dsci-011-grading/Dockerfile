@@ -12,5 +12,4 @@ RUN jupyter nbextension enable --sys-prefix --py nbgrader
 RUN jupyter serverextension enable --sys-prefix --py nbgrader
 
 # Install pystest
-RUN pip install -U pytest
 USER $NB_UID
