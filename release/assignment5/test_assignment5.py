@@ -7,22 +7,22 @@ import inspect
 
 def test_1a(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    sha1(str(answer).encode('utf8')).hexdigest() == "ac5b9a895584d5b47a3072d11c4116a9a1fe97ee", "The value for clothing is incorrect. Are you setting up the conditionals properly?"
+    assert sha1(str(answer).encode('utf8')).hexdigest() == "ac5b9a895584d5b47a3072d11c4116a9a1fe97ee", "The value for clothing is incorrect. Are you setting up the conditionals properly?"
     return("Success")
 
 def test_1b(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    sha1(str(answer).encode('utf8')).hexdigest() == "b2b49807429fe76fc54b0f3ab85f97eb9f2b496b", "The value for size is incorrect. Are you setting up the conditionals properly?"
+    assert sha1(str(answer).encode('utf8')).hexdigest() == "b2b49807429fe76fc54b0f3ab85f97eb9f2b496b", "The value for size is incorrect. Are you setting up the conditionals properly?"
     return("Success")
 
 def test_1c(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    sha1(str(answer).encode('utf8')).hexdigest() == "35a14b140d57ee762921022522818ee219473828", "Your answer is incorrect. Please try again."
+    assert sha1(str(answer).encode('utf8')).hexdigest() == "35a14b140d57ee762921022522818ee219473828", "Your answer is incorrect. Please try again."
     return("Success")
 
 def test_1d(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    sha1(str(answer).encode('utf8')).hexdigest() == "50c9e8d5fc98727b4bbc93cf5d64a68db647f04f", "Your answer is incorrect. Please try again."
+    assert sha1(str(answer).encode('utf8')).hexdigest() == "50c9e8d5fc98727b4bbc93cf5d64a68db647f04f", "Your answer is incorrect. Please try again."
     return("Success")
 
 def test_1f(answer):
@@ -96,14 +96,14 @@ def test_3b(answer):
 
 def test_4a(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    sha1(str(answer).encode('utf8')).hexdigest() == "9e6a55b6b4563e652a23be9d623ca5055c356940", "Your answer is incorrect. Are you reading the nested loop properly?"
+    assert sha1(str(answer).encode('utf8')).hexdigest() == "9e6a55b6b4563e652a23be9d623ca5055c356940", "Your answer is incorrect. Are you reading the nested loop properly?"
     return("Success")
 
 def test_4b(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert len(answer) == 3, "The length of your dictionary is incorrect. Are you setting up your loop and conditionals properly?"
-    sha1(str(list(answer.keys())).encode('utf8')).hexdigest() == "cc7372cfe80a04d3104bec411c58bc43f5d47271", "The keys in your dictionary are incorrect. Are you setting up your loop and conditionals properly?"
-    sha1(str(list(answer.values())).encode('utf8')).hexdigest() == "bcd861bf744c6a1b6a805a2aae0cc2d326ef0122", "The values in your dictionary are incorrect. Are you setting up your loop and conditionals properly?"
+    assert sha1(str(list(answer.keys())).encode('utf8')).hexdigest() == "cc7372cfe80a04d3104bec411c58bc43f5d47271", "The keys in your dictionary are incorrect. Are you setting up your loop and conditionals properly?"
+    assert sha1(str(list(answer.values())).encode('utf8')).hexdigest() == "bcd861bf744c6a1b6a805a2aae0cc2d326ef0122", "The values in your dictionary are incorrect. Are you setting up your loop and conditionals properly?"
     return("Success")
 
 def test_5a(answer):
@@ -131,6 +131,6 @@ def test_5d(answer):
 def test_5e(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert len(answer) == 6, "The length of your dictionary is incorrect. Are you setting up your function properly?"
-    sha1(str(list(answer.keys())).encode('utf8')).hexdigest() == "4fe94dae421429155f4a9eae286f79ac623b1eb7", "The keys in your function's output are incorrect. Are you setting up your loop and conditionals in your function properly?"
-    sha1(str(list(answer.values())).encode('utf8')).hexdigest() == "ae769f11adc0df819ce4cc71f64a46943030b15a", "The values in your function's output are incorrect. Are you setting up your loop and conditionals in your function properly?"
+    assert sha1(str(list(answer.keys())).encode('utf8')).hexdigest() == "4fe94dae421429155f4a9eae286f79ac623b1eb7", "The keys in your function's output are incorrect. Are you setting up your loop and conditionals in your function properly?"
+    assert sha1(str(list(answer.values())).encode('utf8')).hexdigest() == "ae769f11adc0df819ce4cc71f64a46943030b15a", "The values in your function's output are incorrect. Are you setting up your loop and conditionals in your function properly?"
     return("Success")

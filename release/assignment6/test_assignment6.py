@@ -38,8 +38,8 @@ def test_2a(answer):
     assert "Returns" in str_fun, "Make sure your docstring includes a 'Returns' section"
     assert "Examples" in str_fun, "Make sure your docstring includes an 'Examples' section"
     return("Success")
-    
-    
+
+
 def test_3a(answer):
     assert not answer is None, "Your function does not exist. Have you passed in the correct function?"
     str_fun = inspect.getsource(answer)
@@ -48,29 +48,29 @@ def test_3a(answer):
     assert "ValueError" in str_fun, "Make sure you are raising a 'ValueError' for incorrect values"
     assert "Exception" in str_fun, "Make sure you are raising an 'Excpetion' for non existent values"
     return("Success")
-    
+
 def test_3b(answer):
     assert not answer is None, "Your function does not exist. Have you passed in the correct function?"
     str_fun = inspect.getsource(answer)
     assert str_fun.count('raise') > 2, "Make sure you are adding at least three conditions"
     assert str_fun.count('if') > 2, "Make sure you are adding at least three conditions"
     return("Success")
-    
+
 def test_4a(answer):
     assert not answer is None, "Your dataframe does not exist. Have you passed in the correct dataframe?"
     assert answer.shape[0] < 20 and answer.shape[0] > 5, "Make sure the number of rows in your dataframe is between 5 and 20"
     assert answer.shape[1] < 10 and answer.shape[1] > 3, "Make sure the number of columns in your datafame is between 3 and 10"
     assert len(set(list(answer.dtypes))) > 1, "Make sure you are providing different data types to the columns in your dataframe"
     return("Success")
-    
+
 def test_5a(answer):
-    sha1(str(answer + "5").encode('utf8')).hexdigest() == "d5183bf9332928633669d12c81fe3cda73996b19", "Your answer is incorrect. Please try again"
+    assert sha1(str(answer + "5").encode('utf8')).hexdigest() == "d5183bf9332928633669d12c81fe3cda73996b19", "Your answer is incorrect. Please try again"
     return("Success")
-    
+
 def test_5c(answer):
-    sha1(str(answer + "16").encode('utf8')).hexdigest() == "8dda9f6573d6e7b59c6ee869cd930d1e181b046d", "Your answer is incorrect. Please try again"
+    assert sha1(str(answer + "16").encode('utf8')).hexdigest() == "8dda9f6573d6e7b59c6ee869cd930d1e181b046d", "Your answer is incorrect. Please try again"
     return("Success")
-    
+
 def test_5d(answer):
     assert not answer is None, "Your function does not exist. Have you passed in the correct function?"
     str_fun = inspect.getsource(answer)
@@ -81,12 +81,12 @@ def test_5d(answer):
     res = answer("Deceased")
     assert round(res) == 916, "Your function's output is incorrect. Are you writing the function properly?"
     return("Success")
-    
+
 def test_5e(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    sha1(str(answer + "26").encode('utf8')).hexdigest() == "03d4dbbccf91fcfa59653b4aea3c9d7fed5d07bd", "Your answer is incorrect. Please try again"
+    assert sha1(str(answer + "26").encode('utf8')).hexdigest() == "03d4dbbccf91fcfa59653b4aea3c9d7fed5d07bd", "Your answer is incorrect. Please try again"
     return("Success")
-    
+
 def test_5f(answer1, answer2, data):
     assert not answer1 is None, "Your function does not exist. Have you passed in the correct function?"
     str_fun1 = inspect.getsource(answer1)
