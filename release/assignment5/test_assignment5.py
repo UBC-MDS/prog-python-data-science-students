@@ -7,7 +7,7 @@ import inspect
 
 def test_1a(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert sha1(str(answer).encode('utf8')).hexdigest() == "ac5b9a895584d5b47a3072d11c4116a9a1fe97ee", "The value for clothing is incorrect. Are you setting up the conditionals properly?"
+    assert sha1(str(answer).encode('utf8')).hexdigest() == "62a9e9e84541b135e40d6a44d9ca49095f9ac316", "The value for clothing is incorrect. Are you setting up the conditionals properly?"
     return("Success")
 
 def test_1b(answer):
