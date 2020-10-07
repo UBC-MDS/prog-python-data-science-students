@@ -27,7 +27,7 @@ def test_1d(answer):
 
 def test_1f(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert sha1(str(answer + "k").encode('utf8')).hexdigest() == "a1382f8f61bcba9266e29a3fce9ccd7c9b961459", "Your answer is incorrect. Please try again."
+    assert sha1(str(answer + "k").encode('utf8')).hexdigest() == "a7d0008d025f37434b7cd8c853384cd610f6d92c", "Your answer is incorrect. Please try again."
     return("Success")
 
 def test_1g(answer):
