@@ -84,7 +84,7 @@ def test_5d(answer):
 
 def test_5e(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert sha1(str(answer + "26").encode('utf8')).hexdigest() == "03d4dbbccf91fcfa59653b4aea3c9d7fed5d07bd", "Your answer is incorrect. Please try again"
+    assert sha1(str(answer + "26").encode('utf8')).hexdigest() == "9bd29e9018fb40e7e7beef564d296f5c26704785", "Your answer is incorrect. Please try again"
     return("Success")
 
 def test_5f(answer1, answer2, data):
