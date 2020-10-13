@@ -84,7 +84,7 @@ def test_4aii(answer):
 
 def test_4aiii(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert sha1(str(answer.lower() + '17').encode('utf8')).hexdigest() == "33501d5d065b33a9e94d778c2cc6a5f6f5e2d086", "Your answer is incorrect. Please try again."
+    assert sha1(str(answer.lower() + '17').encode('utf8')).hexdigest() == "80db3577882af5eb37c0a9a61e8e027f61997b92", "Your answer is incorrect. Please try again."
     return("Success")
 
 def test_4b(answer):
