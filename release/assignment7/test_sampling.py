@@ -1,5 +1,5 @@
 import pandas as pd
-# Import the function sample_dataframe from your sampling.py file here
+# Import the function here
 
 def test_sd_rows():
     raw = {'id': [1873, 4913, 4801, 4540, 3581,
