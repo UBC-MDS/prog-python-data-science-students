@@ -1,3 +1,9 @@
 **.ipython/*
 **.jupyter/*
 **.local/*
+.npm/
+dockerfiles/.jupyter/
+dockerfiles/.npm/
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.bash_history
