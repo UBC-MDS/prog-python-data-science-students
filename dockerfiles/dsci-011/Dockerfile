@@ -19,11 +19,10 @@ RUN conda install --quiet --yes -c conda-forge \
     xgboost \
     matplotlib 
 
-RUN apt-get update && apt-get install -y \
-  apt-utils \
-  strace \
-  graphviz \
-  && rm -rf /var/lib/apt/lists/*
+RUN apt-get -qq update; \
+    apt-get install -qqy \
+        python-pydot python3-pydot python-pygraphviz python3-pygraphviz; \
+    rm -rf /var/lib/apt/lists/*
 
 # Install jupyter extensions (nbgitpuller, git and jupytext)
 USER root
