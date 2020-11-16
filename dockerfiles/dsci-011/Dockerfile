@@ -14,6 +14,7 @@ RUN conda install --quiet --yes -c conda-forge \
     pytest \
     xlrd \
     graphviz \
+    python-graphviz \
     scikit-learn \
     xgboost \
     matplotlib 
