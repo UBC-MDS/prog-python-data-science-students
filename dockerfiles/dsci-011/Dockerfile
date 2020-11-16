@@ -5,6 +5,7 @@ FROM $BASE_CONTAINER
 
 LABEL maintainer="Elijah Willie <ewillie@cmmt.ubc.ca"
 # Install Python packages on conda-forge
+RUN conda config --add channels conda-forge
 RUN conda install --quiet --yes -c conda-forge \
     altair=4.* \
     black=19.* \
@@ -20,11 +21,6 @@ RUN conda install --quiet --yes -c conda-forge \
  
 USER root
 
-RUN conda config --add channels conda-forge
-RUN apt-get -qq update; \
-    apt-get install -qqy \
-        python-pydot python3-pydot python-pygraphviz python3-pygraphviz; \
-    rm -rf /var/lib/apt/lists/*
 # Install jupyter extensions (nbgitpuller, git and jupytext)
 
 RUN pip install git+https://github.com/data-8/nbgitpuller \
