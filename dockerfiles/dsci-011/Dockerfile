@@ -19,14 +19,14 @@ RUN conda install --quiet --yes -c conda-forge \
     xgboost \
     matplotlib 
 
+USER root
+
 RUN apt-get -qq update; \
     apt-get install -qqy \
         python-pydot python3-pydot python-pygraphviz python3-pygraphviz; \
     rm -rf /var/lib/apt/lists/*
 
 # Install jupyter extensions (nbgitpuller, git and jupytext)
-USER root
-
 RUN pip install git+https://github.com/data-8/nbgitpuller \
     && pip install git+https://github.com/altair-viz/altair_saver \
     && jupyter serverextension enable --sys-prefix nbgitpuller \
