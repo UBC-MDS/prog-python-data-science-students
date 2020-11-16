@@ -2,8 +2,8 @@
 # Distributed under the terms of the Modified BSD License.
 ARG BASE_CONTAINER=jupyter/scipy-notebook
 FROM $BASE_CONTAINER
-
 LABEL maintainer="Elijah Willie <ewillie@cmmt.ubc.ca"
+
 # Install Python packages on conda-forge
 RUN conda config --add channels conda-forge
 RUN conda install --quiet --yes -c conda-forge \
@@ -22,7 +22,6 @@ RUN conda install --quiet --yes -c conda-forge \
 USER root
 
 # Install jupyter extensions (nbgitpuller, git and jupytext)
-
 RUN pip install git+https://github.com/data-8/nbgitpuller \
     && pip install git+https://github.com/altair-viz/altair_saver \
     && jupyter serverextension enable --sys-prefix nbgitpuller \
