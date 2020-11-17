@@ -24,7 +24,7 @@ def test_4a(answer):
     assert isinstance(answer, str), str(answer) + \
         " should be expressed as a string"
     assert sha1(str(answer).encode('utf8')).hexdigest(
-    ) == 'e52a2f95a54f3c4947b453c8adcf044226b839ce', "Your answer is incorrect." # we hid the answer to the test here so you can't see it, but we can still run the test
+    ) == '02b7558df1cdf9e9ee01b0cf4e37ac518a80eec1', "Your answer is incorrect." # we hid the answer to the test here so you can't see it, but we can still run the test
     return "Success"
 
 
