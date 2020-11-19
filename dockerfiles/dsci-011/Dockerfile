@@ -23,7 +23,7 @@ RUN conda install --quiet --yes -c conda-forge \
     xgboost \
     matplotlib
 
-RUN jupyter labextension install --dev-build=False --minimize=False jupyterlab-flake8 \
+RUN jupyter labextension install jupyterlab-flake8 \
     && jupyter labextension install --dev-build=False --minimize=False @ryantam626/jupyterlab_code_formatter \
     && pip install jupyterlab_code_formatter \
     && jupyter serverextension enable --py jupyterlab_code_formatter --sys-prefix\
