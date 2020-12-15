@@ -1,6 +1,7 @@
 import pandas as pd
 
 
+# +
 def sample_dataframe(data, grouping_col, N = 1):
     """
     Given a dataframe, return a smaller sample of the dataframe
@@ -38,3 +39,5 @@ def sample_dataframe(data, grouping_col, N = 1):
         sampled_df = pd.concat([sampled_df, group_sampling])
     
     return sampled_df
+
+
