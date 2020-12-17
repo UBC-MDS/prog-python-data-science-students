@@ -68,8 +68,13 @@ def test_2e(answer):
 def test_2f(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert len(answer) == 5, "The length of your dictionary is incorrect. Are you setting up your loop and conditionals properly?"
-    assert sha1(str(list(answer.keys())).encode('utf8')).hexdigest() == "d34aa4adfba46f022880c2d3473197497564d02d", "The keys in your dictionary are incorrect. Are you setting up your loop and conditionals properly?"
-    assert sha1(str(list(answer.values())).encode('utf8')).hexdigest() == "f65cf160d5754cd507da6034e4a9537a595fe8b9", "The values in your dictionary are incorrect. Are you setting up your loop and conditionals properly?"
+    keys_sorted = sorted(list(answer.keys()))
+    assert sha1(str(keys_sorted).encode('utf8')).hexdigest() == "7db2e0930ed769a0e13892fb3a618c42f2db8462", "The keys in your dictionary are incorrect. Are you setting up your loop and conditionals properly?"
+    assert sha1(str(answer[keys_sorted[0]]+16).encode("utf8")).hexdigest() == "9e6a55b6b4563e652a23be9d623ca5055c356940", "The number of items on the shopping list for one of the ingredients is incorrect."
+    assert sha1(str(answer[keys_sorted[1]]+8).encode("utf8")).hexdigest() == "17ba0791499db908433b80f37c5fbc89b870084b", "The number of items on the shopping list for one of the ingredients is incorrect."
+    assert sha1(str(answer[keys_sorted[2]]+7).encode("utf8")).hexdigest() == "fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f", "The number of items on the shopping list for one of the ingredients is incorrect."
+    assert sha1(str(answer[keys_sorted[3]]+2).encode("utf8")).hexdigest() == "1b6453892473a467d07372d45eb05abc2031647a", "The number of items on the shopping list for one of the ingredients is incorrect."
+    assert sha1(str(answer[keys_sorted[4]]+10).encode("utf8")).hexdigest() == "17ba0791499db908433b80f37c5fbc89b870084b", "The number of items on the shopping list for one of the ingredients is incorrect."
     return("Success")
 
 def test_3a(answer):
