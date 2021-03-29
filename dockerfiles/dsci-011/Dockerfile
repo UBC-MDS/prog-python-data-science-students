@@ -15,6 +15,9 @@ RUN conda install --quiet --yes -c conda-forge \
     black \
     flake8 \
     panel \
+    dash-html-components \
+    dash-core-components \
+    dash-bootstrap-components \
     altair_saver \
     vega_datasets \
     dash \
