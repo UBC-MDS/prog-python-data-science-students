@@ -14,6 +14,7 @@ RUN conda install --quiet --yes -c conda-forge \
     altair \
     black \
     flake8 \
+    panel \
     flake8-nb \
     isort \
     pytest \
