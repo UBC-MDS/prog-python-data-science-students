@@ -11,4 +11,7 @@ RUN jupyter nbextension install --sys-prefix --py nbgrader --overwrite
 RUN jupyter nbextension enable --sys-prefix --py nbgrader
 RUN jupyter serverextension enable --sys-prefix --py nbgrader
 
+# downgrade nbconvert to 5.6.1 so that feedback forms can be generated
+RUN pip install "nbconvert<6"
+
 USER $NB_UID
