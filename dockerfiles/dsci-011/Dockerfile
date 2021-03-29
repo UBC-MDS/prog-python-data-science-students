@@ -32,7 +32,6 @@ RUN conda install --quiet --yes -c conda-forge \
 
 RUN jupyter labextension install jupyterlab-flake8 \
     && jupyter labextension install @ryantam626/jupyterlab_code_formatter \
-    && jupyter labextension install @pyviz/jupyterlab_pyviz \
     && pip install jupyterlab_code_formatter \
     && jupyter serverextension enable --py jupyterlab_code_formatter --sys-prefix\
     && jupyter lab build
