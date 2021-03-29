@@ -18,9 +18,6 @@ RUN conda install --quiet --yes -c conda-forge \
     altair_saver \
     vega_datasets \
     dash \
-    dash_html_components \
-    dash_core_components \
-    dash_bootstrap_components \
     flake8-nb \
     isort \
     pytest \
