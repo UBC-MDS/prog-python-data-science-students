@@ -18,6 +18,8 @@ RUN conda install --quiet --yes -c conda-forge \
     dash-html-components \
     dash-core-components \
     dash-bootstrap-components \
+    altair_data_server \
+    jupyter-server-proxy \
     altair_saver \
     vega_datasets \
     dash \
