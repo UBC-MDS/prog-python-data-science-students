@@ -277,7 +277,7 @@ def test_3g(answer):
     assert sha1(str(list(answer)[0] + 10).encode('utf8')).hexdigest(
     ) == "ebb4fe9f608ae0e66e714b2299a672ef7cc1e0f3", "The average age is incorrect. Are you computing it correctly?"
     assert sha1(str(list(answer)[1] + 10).encode('utf8')).hexdigest(
-    ) == "a833d20673e4271077b2abff1eb17cae2ee7d132", "The average fare is incorrect. Are you computing it correctly?"
+    ) == "81087e980caa119b87c091c0f1048c577e277c15", "The average fare is incorrect. Are you computing it correctly?"
     return ("success")
 
 
