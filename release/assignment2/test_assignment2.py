@@ -412,17 +412,14 @@ def test_4h(answer):
     return ("success")
 
 def test_4i(answer):
-    assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert list(answer.index[0]) == [3, 'female', 'senior'], "Incorrect values. Are you grouping and sorting correctly?"
-    assert list(answer.index[23]) == [2, 'female', 'senior'], "Incorrect values. Are you grouping and sorting correctly?"
+    assert list(answer.index[23]) == [3, 'male', 'senior'], "Incorrect values. Are you grouping and sorting correctly?"
     assert list(answer.index[12]) == [1, 'male', 'adult'], "Incorrect values. Are you grouping and sorting correctly?"
-    return ("success")
+    return("success")
 
 
 def test_4j(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
     assert sha1(str(answer).encode('utf8')).hexdigest(
     ) == "98ae019454f12e734c6fefc48b193b4e5c47604f", "Answer is incorrect"
-    print("Success")
-
-
+    return("success")
