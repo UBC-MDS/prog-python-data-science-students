@@ -20,7 +20,7 @@ def test_1b(answer):
 
 def test_1d(answer):
     assert answer.shape[0] == 4 and answer.shape[1] == 3, "Your dataframe dimensions are incorrect. Are you tidying properly?"
-    assert answer["count"].sum() == 57, "Some values in your dataframe are incorrect. Are you tidying properly?"
+    assert answer[answer.columns[-1]].sum() == 57, "Some values in your dataframe are incorrect. Are you tidying properly?"
     return("Success")
 
 def test_1e(answer):
