@@ -32,6 +32,11 @@ RUN conda install --quiet --yes -c conda-forge \
     xgboost \
     matplotlib
 
+# version of altair_data_server that works with subfolders on a JupyterHub
+# will replace with installation from https://github.com/altair-viz/altair_data_server
+# once this PR is merged
+RUN pip install -U git+https://github.com/yuvipanda/altair_data_server@better-hub-support-2
+
 RUN jupyter labextension install jupyterlab-flake8 \
     && jupyter labextension install @ryantam626/jupyterlab_code_formatter \
     && pip install jupyterlab_code_formatter \
