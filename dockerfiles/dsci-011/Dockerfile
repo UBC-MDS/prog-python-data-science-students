@@ -26,7 +26,8 @@ RUN conda install --quiet --yes -c conda-forge \
     flake8-nb \
     isort \
     pytest \
-    xlrd=1.* \
+    xlrd= \
+    openpyxl \
     python-graphviz \
     scikit-learn \
     xgboost \
