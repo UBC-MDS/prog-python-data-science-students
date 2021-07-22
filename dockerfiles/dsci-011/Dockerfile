@@ -46,6 +46,8 @@ RUN jupyter labextension install jupyterlab-flake8 \
 
 USER jupyter
 
+COPY rm-merge-shortcut.py /tmp/user-settings/\@jupyterlab/shortcuts-extension/shortcuts.jupyterlab-settings
+
 # Configure jupyter user
 ENV NB_USER=jupyter \
     NB_UID=9999
