@@ -1,4 +1,4 @@
-# Copyright (c) UBC-DSCI Development Team.
+# Copyright (c) UBC-DSCI Development Team
 # Distributed under the terms of the Modified BSD License.
 ARG BASE_CONTAINER=ubcmds/dsci-011:v0.32.0
 
