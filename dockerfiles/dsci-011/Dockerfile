@@ -39,9 +39,11 @@ RUN conda install --quiet --yes -c conda-forge \
 RUN pip install -U git+https://github.com/yuvipanda/altair_data_server@better-hub-support-2
 
 RUN jupyter labextension install jupyterlab-flake8 \
+    && pip install git+https://github.com/data-8/nbgitpuller \
     && jupyter labextension install @ryantam626/jupyterlab_code_formatter \
     && pip install jupyterlab_code_formatter \
-    && jupyter serverextension enable --py jupyterlab_code_formatter --sys-prefix\
+    && pip install jupyterlab-git \
+    && pip install jupytext --upgrade \
     && jupyter lab build
 
 USER jupyter
