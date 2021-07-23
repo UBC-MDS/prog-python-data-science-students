@@ -15,4 +15,4 @@ jobs:
         name: ubcdsci/dsci-rm-merge-cells
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        workdir: dsci-rm-merge-cells
+        workdir: dockerfiles/dsci-rm-merge-cells
