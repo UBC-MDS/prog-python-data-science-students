@@ -2,7 +2,7 @@ name: Publish dsci-rm-merge-cells on DockerHub
 on: 
   push: 
     paths: 
-      - 'dsci-rm-merge-cells/Dockerfile'
+      - 'dockerfiles/dsci-rm-merge-cells/Dockerfile'
 
 jobs:
   build:
