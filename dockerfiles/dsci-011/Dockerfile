@@ -40,7 +40,6 @@ RUN pip install -U git+https://github.com/yuvipanda/altair_data_server@better-hu
 
 RUN jupyter labextension install jupyterlab-flake8 \
     && pip install git+https://github.com/data-8/nbgitpuller \
-    && jupyter labextension install @ryantam626/jupyterlab_code_formatter \
     && pip install jupyterlab_code_formatter \
     && pip install jupyterlab-git \
     && pip install jupytext --upgrade \
