@@ -1,5 +1,6 @@
 from hashlib import sha1
 import pandas as pd
+import altair as alt
 import pytest
 import sys
 from decimal import Decimal
@@ -208,7 +209,7 @@ def test_2e(answer):
 
 def test_2f(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
+    assert (answer.mark == 'bar' or answer.mark.type == 'bar'), "Make sure you are using the 'mark_bar()' function"
     assert str(answer.encoding.x.shorthand) == 'COMMON_NAME' or str(answer.encoding.x.field) == 'COMMON_NAME', "Make sure you are plotting the \
                                                                                                     `COMMON_NAME` variable on the x-axis."
     if str(answer.encoding.y.shorthand) == 'Undefined':
@@ -345,7 +346,7 @@ def test_3k(answer):
 
 def test_4a(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
+    assert (answer.mark == 'bar' or answer.mark.type == 'bar'), "Make sure you are using the 'mark_bar()' function"
     assert answer.encoding.x.shorthand == 'pclass' or answer.encoding.x.field == 'pclass', "Make sure you are plotting the 'pclass' variable on the x-axis."
     if str(answer.encoding.y.shorthand) == 'Undefined':
         assert answer.encoding.y.field == 'survived', "Make sure you are plotting the 'survived' variable on the y-axis."
@@ -364,7 +365,7 @@ def test_4b(answer):
 
 def test_4c(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
+    assert (answer.mark == 'bar' or answer.mark.type == 'bar'), "Make sure you are using the 'mark_bar()' function"
     assert answer.encoding.x.shorthand == 'sex' or answer.encoding.x.field == 'sex', "Make sure you are plotting the 'sex' variable on the x-axis."
     if str(answer.encoding.y.shorthand) == 'Undefined':
         assert answer.encoding.y.field == 'survived', "Make sure you are plotting the 'survived' variable on the y-axis."
@@ -383,7 +384,7 @@ def test_4d(answer):
 
 def test_4e(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
+    assert (answer.mark == 'bar' or answer.mark.type == 'bar'), "Make sure you are using the 'mark_bar()' function"
     assert answer.encoding.x.shorthand == 'age_group' or answer.encoding.x.field == 'age_group', "Make sure you are plotting the 'age_group' variable on the x-axis."
     if str(answer.encoding.y.shorthand) == 'Undefined':
         assert answer.encoding.y.field == 'survived', "Make sure you are plotting the 'survived' variable on the y-axis."

@@ -77,7 +77,7 @@ def test_2f(answer):
 
 def test_2g(answer):
     assert answer.shape[1] == 4, "The number of columns is incorrect. Are you adding the Wage_Gap column?"
-    msg = "Your dataframe contains the incorrect columns. Are you adding the Wage_Gap column \
+    msg = "Your dataframe contains the incorrect columns. Are you adding the Wage_Gap column? \
     \nExpected ['School', 'Women', 'Men', 'Wage_Gap'], but got {0}".format(
         list(answer.columns))
     assert sorted(list(answer.columns)) == sorted(
@@ -86,7 +86,7 @@ def test_2g(answer):
     assert list(answer.Wage_Gap)[0:4] == [58, 55, 53, 49], "Order of Wage_Gap column is incorrect. Are you sorting by Wage_Gap in decending order?"
     return("Success")
 
-# =============================================================================
+# =============================================================================   
 # def test_2i(answer):
 #     msg = "Incorrect columns present in the dataframe. Are you keeping the Wage_Gap column \
 #     \nExpected ['School', 'Wage_Gap', 'Gender', 'Wage'], but got {0}".format(
@@ -114,11 +114,12 @@ def test_2g(answer):
 #     assert sorted(list(answer.columns)) == sorted(
 #         ['School', 'Wage_Gap', 'Men', 'Women']), msg
 #     return("Success")
+#     
 # =============================================================================
 
 def test_2h(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
+    assert (answer.mark == 'bar' or answer.mark.type == 'bar'), "Make sure you are using the 'mark_bar()' function"
     assert str(answer.encoding.x.shorthand) == 'School' or str(answer.encoding.x.field) == 'School', "Make sure you are plotting the \
                                                                                                     `School` variable on the x-axis."
     assert str(answer.encoding.y.shorthand) == 'Wage_Gap' or str(answer.encoding.y.field) == 'Wage_Gap', "Make sure you are plotting the \
@@ -223,7 +224,7 @@ def test_4h(answer):
 
 def test_4i(answer):
     assert not answer is None, "Your answer does not exist. Have you passed in the correct variable?"
-    assert answer.mark == "bar", "Your plot is not a bar plot. Make sure you are using the 'mark_bar()' function"
+    assert (answer.mark == 'bar' or answer.mark.type == 'bar'), "Make sure you are using the 'mark_bar()' function"
     assert str(answer.encoding.x.shorthand) == 'Continent' or str(answer.encoding.x.field) == 'Continent', "Make sure you are plotting the \
                                                                                                     `Continent` variable on the x-axis."
     assert str(answer.encoding.y.shorthand) == 'Emission_pp' or str(answer.encoding.y.field) == 'Emission_pp', "Make sure you are plotting the \
