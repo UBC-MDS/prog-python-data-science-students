@@ -1,0 +1,190 @@
+Year,Classification,Union,Minimum hourly rate,Maximum hourly rate,Women,Men,Total
+2019,Administrative Manager 3,FALSE,47.97,66.3,18,19,37
+2019,General Manager 2,FALSE,120.47,150.95,3,6,9
+2019,Manager 1,FALSE,50.06,70.97,49,39,88
+2019,Manager 3,FALSE,64.62,95.49,19,32,51
+2019,Operations Manager 0,FALSE,40.62,53.65,1,21,22
+2019,Operations Manager 2,FALSE,58.23,70.97,2,17,19
+2019,Operations Manager 4,FALSE,71.48,82.92,3,6,9
+2019,Professional 1,FALSE,40.92,50.89,13,5,18
+2019,Professional 3,FALSE,38.54,76.59,47,75,122
+2019,Professional Trainee,FALSE,36.34,45.43,8,3,11
+2019,Senior Manager 3,FALSE,95.49,119.3,7,2,9
+2019,Aquatic II,TRUE,30.01,30.01,18,25,43
+2019,Construction III,TRUE,30.81,30.81,1,13,14
+2019,Construction IIIa,TRUE,31.25,31.25,,4,4
+2019,Construction V,TRUE,33.11,33.11,,2,2
+2019,Construction Va,TRUE,33.11,33.11,,1,1
+2019,Equipment Operator IV,TRUE,31.25,31.25,,8,8
+2019,Support Worker I,TRUE,27.54,27.54,8,13,21
+2019,Support Worker II,TRUE,30.01,30.01,,2,2
+2019,Trades I,TRUE,29.04,34.68,1,35,36
+2019,Trades II,TRUE,39.53,39.53,15,92,107
+2019,Trades III,TRUE,41.43,41.43,,18,18
+2019,Truck Driver I,TRUE,29.52,29.52,,57,57
+2019,Truck Driver IIIa,TRUE,31.25,31.25,1,27,28
+2019,Worker I,TRUE,27.54,28.67,4,57,61
+2019,Worker II,TRUE,20.48,39.16,52,475,527
+2019,WORKER Vb,TRUE,32.4,32.4,,3,3
+2019,Working Supervisor II,TRUE,32.4,33.89,3,43,46
+2019,Admin Support V,TRUE,29.74,34.98,53,6,59
+2019,Administrative Assistant IVa,TRUE,48.78,48.78,,1,1
+2019,Administrative Support VI,TRUE,37.97,37.97,1,1,2
+2019,Facility Support 10,TRUE,23.76,30.98,293,280,573
+2019,IT A,TRUE,26.36,29.74,3,,3
+2019,IT IIa,TRUE,34.98,41.29,6,17,23
+2019,IT V,TRUE,48.78,50.85,2,1,3
+2019,IT VIII,TRUE,65.47,65.47,,1,1
+2019,Operational Support I,TRUE,23.44,28.55,83,294,377
+2019,Operational Support III,TRUE,27.45,33.6,31,43,74
+2019,Operational Support IVa,TRUE,30.98,37.97,2,4,6
+2019,Operational Support V,TRUE,32.25,37.97,39,85,124
+2019,Operational Support VI,TRUE,34.98,41.29,13,23,36
+2019,Operational Support VIIa,TRUE,41.29,46.75,5,3,8
+2019,Operational Support VIII,TRUE,41.29,48.78,6,8,14
+2019,Operations Support IX,TRUE,27.45,55.35,35,59,94
+2019,Policy Management IIIa,TRUE,55.35,65.47,21,12,33
+2019,Program Delivery Ia,TRUE,26.36,30.98,19,21,40
+2019,Program Delivery III,TRUE,29.74,34.98,7,2,9
+2019,Program Delivery IIIa,TRUE,30.98,36.45,68,44,112
+2019,Program Delivery IVa,TRUE,34.98,39.56,3,2,5
+2019,Program Delivery V,TRUE,34.98,34.98,2,,2
+2019,Program Delivery VI,TRUE,37.97,44.83,15,8,23
+2019,Program Delivery VII,TRUE,41.29,48.78,17,3,20
+2019,Program Support V,TRUE,24.36,28.55,26,34,60
+2019,Program Support VII,TRUE,27.45,32.25,7,3,10
+2019,Regulatory Ia,TRUE,28.55,33.6,5,5,10
+2019,Regulatory III,TRUE,32.25,53.01,13,6,19
+2019,Regulatory VII,TRUE,44.83,53.01,1,5,6
+2019,SUPERVISOR - REGULATORY,TRUE,36.45,37.97,1,1,2
+2019,Battalion Chief Fire,TRUE,65.15,65.15,,12,12
+2019,Fire Prevention Inspector,TRUE,46.47,57.38,1,14,15
+2019,Lieutenant  Fire,TRUE,52.04,68.03,1,85,86
+2019,Machinist Mechanic Fire,TRUE,50.64,50.64,,9,9
+2019,Theatre Technician II,TRUE,38.74,42.13,1,2,3
+2019,Theatre Technician III,TRUE,47.73,47.73,,1,1
+2019,Engineering Operations Branch Trades,TRUE,43.72,45.9,4,58,62
+2019,Regulatory Vb,TRUE,38.2,46.14,,7,7
+2019,Regulatory VI,TRUE,44.83,48.78,,19,19
+2019,Regulatory VIII,TRUE,53.01,53.01,,3,3
+2019,Administrative Assistant 4,FALSE,29.44,39.64,22,,22
+2019,Administrative Manager 1,FALSE,39.43,66.11,12,2,14
+2019,City Manager,FALSE,191.8,191.8,,1,1
+2019,General Manager 1,FALSE,123.1,123.1,,1,1
+2019,Legal 2,FALSE,89.14,89.14,,1,1
+2019,Operations Manager 1,FALSE,41.73,65.6,3,48,51
+2019,Professional 2,FALSE,37.28,61.33,98,107,205
+2019,Professional 4,FALSE,60.24,70.97,3,5,8
+2019,Senior Manager 2,FALSE,80.38,95.49,21,23,44
+2019,Aquatic III,TRUE,31.25,31.25,6,8,14
+2019,Construction Coordinator,TRUE,41.22,41.22,,1,1
+2019,Construction II,TRUE,29.52,32.4,6,27,33
+2019,Construction IV,TRUE,32.4,32.4,1,12,13
+2019,Equipment Operator IVb,TRUE,33.11,33.11,,13,13
+2019,Trades Apprentice,TRUE,28.67,39.53,6,10,16
+2019,Trades Ia,TRUE,36.18,36.18,,1,1
+2019,Trades IIa,TRUE,39.16,40.44,,8,8
+2019,Trades IIb,TRUE,40.05,40.85,1,49,50
+2019,Trades IV,TRUE,42.75,42.75,,12,12
+2019,Truck Driver II,TRUE,30.47,30.47,,44,44
+2019,Truck Driver III,TRUE,30.81,31.25,,49,49
+2019,Worker VII,TRUE,39.16,39.16,,5,5
+2019,Working Foreman,TRUE,39.16,39.16,,2,2
+2019,Working Supervisor I,TRUE,32.4,32.4,2,20,22
+2019,Working Supervisor III,TRUE,34.68,34.68,2,23,25
+2019,Working Supervisor IV,TRUE,35.75,35.75,,12,12
+2019,Admin Management V,TRUE,46.75,53.01,5,1,6
+2019,Admin Management VI,TRUE,53.01,53.01,,1,1
+2019,Administrative Management IVa,TRUE,46.75,50.85,,2,2
+2019,Facility Support 7,TRUE,24.09,25.31,3,1,4
+2019,IT III,TRUE,36.45,43.04,10,7,17
+2019,IT IIIa,TRUE,41.29,44.83,3,7,10
+2019,IT IVa,TRUE,41.29,57.7,13,39,52
+2019,IT VIa,TRUE,50.85,57.7,4,15,19
+2019,Operational Support IIa,TRUE,26.36,30.98,14,107,121
+2019,Operational Support IV,TRUE,27.45,34.98,7,37,44
+2019,Operational Support Va,TRUE,33.6,39.56,4,27,31
+2019,Operational Support VIa,TRUE,36.45,46.75,44,37,81
+2019,Operational Support VII,TRUE,37.97,44.83,24,68,92
+2019,Operational Support VIIIa,TRUE,46.75,50.85,1,7,8
+2019,Operational Support X,TRUE,48.78,55.35,1,3,4
+2019,Policy Management I,TRUE,44.83,50.85,4,3,7
+2019,Policy Management IIa,TRUE,48.78,65.47,76,54,130
+2019,Program Delivery IIa,TRUE,28.55,33.6,11,2,13
+2019,Program Support I,TRUE,20.84,23.44,46,50,96
+2019,Regulatory I,TRUE,32.25,32.25,1,4,5
+2019,Regulatory II,TRUE,29.74,34.98,9,9,18
+2019,Regulatory IVa,TRUE,43.04,44.83,1,1,2
+2019,Regulatory Va,TRUE,46.75,46.75,1,,1
+2019,Regulatory VI,TRUE,44.83,48.78,2,48,50
+2019,Technical Assistant II,TRUE,41.29,41.29,,1,1
+2019,Fire Prevention Lieutenant,TRUE,62.45,62.45,1,2,3
+2019,Theatre Casual I,TRUE,28.64,32.87,4,17,21
+2019,Theatre Casual IV,TRUE,35.37,37.33,5,29,34
+2019,Theatre Technician I,TRUE,40.35,40.35,,5,5
+2019,Engineering Operations Branch Helper,TRUE,34.8,34.8,,2,2
+2019,Trades Supervisor II,TRUE,48.08,48.08,,10,10
+2019,Administrative Assistant 3,FALSE,27.72,34.89,24,,24
+2019,Administrative Manager 2,FALSE,41.19,61.7,14,9,23
+2019,Executive Assistant 1,FALSE,35.07,49.22,11,3,14
+2019,Legal 3,FALSE,78.95,96.72,14,18,32
+2019,Manager 2,FALSE,56.78,76.59,35,41,76
+2019,Operations Manager,FALSE,50.01,50.57,,2,2
+2019,Operations Manager 3,FALSE,67.03,76.59,1,2,3
+2019,Senior Manager 1,FALSE,65.04,95.49,26,47,73
+2019,Aquatic I,TRUE,29.04,29.04,55,78,133
+2019,Equipment Operator II,TRUE,30.47,30.47,2,23,25
+2019,Equipment Operator III,TRUE,31.25,31.25,,1,1
+2019,Equipment Operator IVa,TRUE,32.4,37.23,,21,21
+2019,Equipment Operator V,TRUE,34.68,34.68,,7,7
+2019,Trades Ib,TRUE,35.75,35.75,,13,13
+2019,Trades IIIb,TRUE,40.44,40.44,4,8,12
+2019,Truck Driver IV,TRUE,31.76,32.4,,17,17
+2019,Worker III,TRUE,28.67,29.04,5,61,66
+2019,Worker IV,TRUE,29.52,29.52,5,39,44
+2019,Worker V,TRUE,30.01,30.01,3,28,31
+2019,WORKER VI,TRUE,33.89,33.89,,1,1
+2019,Working Supervisor IX,TRUE,41.22,41.22,,2,2
+2019,WORKING SUPERVISOR Vb,TRUE,37.23,37.23,,4,4
+2019,Working Supervisor VIII,TRUE,39.16,39.16,,11,11
+2019,Admin Management I,TRUE,33.6,37.97,1,5,6
+2019,Admin Management Ia,TRUE,33.6,39.56,14,2,16
+2019,Admin Management IIa,TRUE,34.98,43.04,2,,2
+2019,Admin Management III,TRUE,46.75,46.75,1,3,4
+2019,Admin Management IIIa,TRUE,39.56,46.75,10,9,19
+2019,Admin Management IV,TRUE,43.04,48.78,5,2,7
+2019,Admin Support I,TRUE,21.66,25.31,81,18,99
+2019,Admin Support Ia,TRUE,22.48,27.45,129,24,153
+2019,Admin Support II,TRUE,23.44,30.98,65,19,84
+2019,Admin Support IIa,TRUE,28.55,28.55,,1,1
+2019,Admin Support III,TRUE,25.31,32.25,153,20,173
+2019,Admin Support IIIa,TRUE,26.36,30.98,2,,2
+2019,Admin Support IV,TRUE,27.45,34.98,168,60,228
+2019,Admin Support IVa,TRUE,28.55,34.98,19,3,22
+2019,Admin Support Va,TRUE,30.98,36.45,15,6,21
+2019,IT Ia,TRUE,30.98,36.45,3,12,15
+2019,IT Ib,TRUE,33.6,39.56,2,1,3
+2019,IT II,TRUE,43.04,43.04,1,,1
+2019,Operational Support AI,TRUE,22.48,26.36,10,25,35
+2019,Operational Support Ia,TRUE,24.36,28.55,14,99,113
+2019,Operational Support II,TRUE,25.31,32.25,15,65,80
+2019,Operational Support IIIa,TRUE,27.45,37.97,8,39,47
+2019,Policy Management Ia,TRUE,44.83,57.7,46,38,84
+2019,Program Delivery IV,TRUE,32.25,37.97,2,6,8
+2019,Program Support II,TRUE,21.66,25.31,108,77,185
+2019,Program Support III,TRUE,22.48,26.36,105,141,246
+2019,Program Support VIa,TRUE,24.77,30.98,23,12,35
+2019,Regulatory IV,TRUE,34.98,48.78,17,10,27
+2019,Regulatory V,TRUE,37.97,44.83,23,35,58
+2019,Regulatory VIII,TRUE,44.83,53.01,9,14,23
+2019,Technical Assistant I,TRUE,25.81,37.97,26,28,54
+2019,Assistant Master Mechanic Fire,TRUE,58.55,58.55,,1,1
+2019,Captain Fire,TRUE,56.69,68.03,1,83,84
+2019,Fire Prevention Captain,TRUE,68.03,71.43,,9,9
+2019,Firefighter,TRUE,31.58,62.45,22,545,567
+2019,Investigator,TRUE,52.04,52.04,,3,3
+2019,Lead Mechanic,TRUE,53.67,53.67,,1,1
+2019,Training Officer Fire,TRUE,71.43,71.43,,10,10
+2019,Theatre Casual V,TRUE,32.87,42.13,,10,10
+2019,Theatre Technician,TRUE,40.35,40.35,,2,2
+2019,Electrical Apprentice,TRUE,17.49,28.42,1,4,5
