@@ -8,3 +8,5 @@ dockerfiles/.npm/
 */.ipynb_checkpoints/*
 .bash_history
 **/.DS_Store
+*/.DS_Store
+release/.DS_Store
